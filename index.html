@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Grade Calculator</title>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Student Grade Calculator</h1><br>
+
+		<form id="details" class="fields form-group" onsubmit="calculate(); return false">
+			<label for="english">English:</label>
+			<input type="number" min="0" max="100" name="english" id="eng" class="form-control">
+
+			<label for="hindi">Hindi:</label>
+			<input type="number" min="0" max="100" name="hindi" id="hin" class="form-control">
+
+			<label for="maths">Maths:</label>
+			<input type="number" min="0" max="100" name="maths" id="mat" class="form-control">
+
+			<label for="science">Science:</label>
+			<input type="number" min="0" max="100" name="Science" id="sc" class="form-control">
+
+			<label for="sst">SST:</label>
+			<input type="number" min="0" max="100" name="sst" id="sst" class="form-control"><br>
+
+			<input type="submit" name="submit" class="btn btn-primary">
+
+		</form>
+
+		<div name="result" class="res">
+			<h1>RESULT</h1><br>
+
+			<div id="result">
+				
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
